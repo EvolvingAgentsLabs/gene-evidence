@@ -1,0 +1,67 @@
+[12:16:23] start diamond
+[12:16:25] done diamond
+[12:16:25] start carbon
+{
+ "annotations.gff3.gz": "ee4e7079912e588ccdcc755f1189e76f995d186c94ef75440647afb29f5758fa",
+ "proteins.faa.gz": "e72fb64464e3675e4975f6d4c8d9995d0ac527c031ec7e1204943dd94d5256f3"
+}
+[12:16:29] done carbon
+[12:16:29] start refseq
+{
+ "GCF_036323735.1_GRCr8_assembly_report.txt": {
+  "md5_verified": true,
+  "sha256": "20a1ff05e11bb5a1bbe8df674ccad3c2d79de627bd08b529c192bb7c2e6ba48a"
+ },
+ "GCF_036323735.1_GRCr8_genomic.gff.gz": {
+  "md5_verified": true,
+  "sha256": "1e8bd710a14f7dc2e6076c97d789074cbb4edb8cf59f3b60a4191a4e3b667dd9"
+ },
+ "GCF_036323735.1_GRCr8_protein.faa.gz": {
+  "md5_verified": true,
+  "sha256": "12fe1fbde637ab941cf17057d5b2f56d1e55b89c50c320a380ecd49286a6fd23"
+ }
+}
+[12:16:33] done refseq
+[12:16:33] start swissprot
+{
+ "file": "/content/ge/data/sprot/uniprot_sprot.fasta.gz",
+ "release": "2026_03 of 02-Sep-2026"
+}
+[12:16:53] done swissprot
+[12:16:53] start pfam
+{
+ "file": "/content/ge/data/pfam/Pfam-A.hmm",
+ "gz_sha256": "2d82087b6c5c60d762cc767f98e8260b273134c215ab7efccf7440614a4e5dab",
+ "release": "38.2"
+}
+[12:18:02] done pfam
+[12:18:02] start run1
+[    20.8s] read inputs: {'carbon_loci': 22337, 'dropped_no_identical_twin': 0, 'overlap_reference_cds': 21390, 'candidates': 947}; proteins found 947
+[    20.8s] stage inputs_and_candidates done in 20.8 s
+[    21.2s] DIAMOND vs Swiss-Prot: start
+[   113.4s] stage diamond_swissprot done in 92.3 s
+[   113.5s] DIAMOND vs reference proteome: start
+[   141.9s] stage diamond_paralogs done in 28.5 s
+[   150.7s] pyhmmer hmmsearch vs Pfam-A: start
+[   361.8s] stage hmmsearch_pfam done in 211.2 s
+[   363.6s] stage graph_and_report done in 1.7 s
+[   363.6s] done: 947 candidates, 100 in report; report check PASS; {'wall_seconds': 363.6, 'stages_seconds': {'inputs_and_candidates': 20.8, 'diamond_swissprot': 92.3, 'diamond_paralogs': 28.5, 'hmmsearch_pfam': 211.2, 'graph_and_report': 1.7}, 'peak_rss_mb_self': 480.0, 'peak_rss_mb_largest_child': 796.5, 'threads': 2, 'cpu_count': 2, 'platform': 'Linux-6.6.122+-x86_64-with-glibc2.39', 'note': 'a stage missing from stages_seconds was resumed from an existing raw table'}
+[12:24:06] done run1
+[12:24:06] start run2
+[    21.3s] read inputs: {'carbon_loci': 22337, 'dropped_no_identical_twin': 0, 'overlap_reference_cds': 21390, 'candidates': 947}; proteins found 947
+[    21.3s] stage inputs_and_candidates done in 21.3 s
+[    21.6s] DIAMOND vs Swiss-Prot: start
+[   115.8s] stage diamond_swissprot done in 94.2 s
+[   115.8s] DIAMOND vs reference proteome: start
+[   145.5s] stage diamond_paralogs done in 29.7 s
+[   154.5s] pyhmmer hmmsearch vs Pfam-A: start
+[   361.2s] stage hmmsearch_pfam done in 206.7 s
+[   363.0s] stage graph_and_report done in 1.8 s
+[   363.0s] done: 947 candidates, 100 in report; report check PASS; {'wall_seconds': 363.0, 'stages_seconds': {'inputs_and_candidates': 21.3, 'diamond_swissprot': 94.2, 'diamond_paralogs': 29.7, 'hmmsearch_pfam': 206.7, 'graph_and_report': 1.8}, 'peak_rss_mb_self': 475.2, 'peak_rss_mb_largest_child': 795.8, 'threads': 2, 'cpu_count': 2, 'platform': 'Linux-6.6.122+-x86_64-with-glibc2.39', 'note': 'a stage missing from stages_seconds was resumed from an existing raw table'}
+[12:30:09] done run2
+[12:30:09] start compare
+[12:30:09] done compare
+[12:30:09] start check
+PASS
+[12:30:10] done check
+[12:30:10] ALL_DONE

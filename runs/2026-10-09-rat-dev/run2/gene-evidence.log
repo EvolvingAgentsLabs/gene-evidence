@@ -1,0 +1,10 @@
+[    21.3s] read inputs: {'carbon_loci': 22337, 'dropped_no_identical_twin': 0, 'overlap_reference_cds': 21390, 'candidates': 947}; proteins found 947
+[    21.3s] stage inputs_and_candidates done in 21.3 s
+[    21.6s] DIAMOND vs Swiss-Prot: start
+[   115.8s] stage diamond_swissprot done in 94.2 s
+[   115.8s] DIAMOND vs reference proteome: start
+[   145.5s] stage diamond_paralogs done in 29.7 s
+[   154.5s] pyhmmer hmmsearch vs Pfam-A: start
+[   361.2s] stage hmmsearch_pfam done in 206.7 s
+[   363.0s] stage graph_and_report done in 1.8 s
+[   363.0s] done: 947 candidates, 100 in report; report check PASS; {'wall_seconds': 363.0, 'stages_seconds': {'inputs_and_candidates': 21.3, 'diamond_swissprot': 94.2, 'diamond_paralogs': 29.7, 'hmmsearch_pfam': 206.7, 'graph_and_report': 1.8}, 'peak_rss_mb_self': 475.2, 'peak_rss_mb_largest_child': 795.8, 'threads': 2, 'cpu_count': 2, 'platform': 'Linux-6.6.122+-x86_64-with-glibc2.39', 'note': 'a stage missing from stages_seconds was resumed from an existing raw table'}

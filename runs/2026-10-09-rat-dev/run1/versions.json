@@ -1,0 +1,71 @@
+{
+ "inputs_and_databases": {
+  "carbon_gff": {
+   "file": "annotations.gff3.gz",
+   "name": "Carbon-A annotations.gff3",
+   "sha256": "ee4e7079912e588ccdcc755f1189e76f995d186c94ef75440647afb29f5758fa",
+   "version": "GCA_036323735.1 (Carbon-A post-processing 6ffa159, model GenerTeam/GENERanno-eukaryote-1.2b-cds-annotator-preview)"
+  },
+  "carbon_proteins": {
+   "file": "proteins.faa.gz",
+   "name": "Carbon-A proteins.faa",
+   "sha256": "e72fb64464e3675e4975f6d4c8d9995d0ac527c031ec7e1204943dd94d5256f3",
+   "version": "GCA_036323735.1 (Carbon-A post-processing 6ffa159, model GenerTeam/GENERanno-eukaryote-1.2b-cds-annotator-preview)"
+  },
+  "pfam": {
+   "file": "Pfam-A.hmm",
+   "name": "Pfam-A HMM library",
+   "sha256": "4b0da6399b97d2b23329de82190b2e5705bde1dea4cb2d028a52712d5966739e",
+   "version": "Pfam 38.2"
+  },
+  "ref_gff": {
+   "file": "GCF_036323735.1_GRCr8_genomic.gff.gz",
+   "name": "RefSeq annotation GFF3",
+   "sha256": "1e8bd710a14f7dc2e6076c97d789074cbb4edb8cf59f3b60a4191a4e3b667dd9",
+   "version": "GCF_036323735.1-RS_2024_02"
+  },
+  "ref_proteins": {
+   "file": "GCF_036323735.1_GRCr8_protein.faa.gz",
+   "name": "RefSeq proteome",
+   "sha256": "12fe1fbde637ab941cf17057d5b2f56d1e55b89c50c320a380ecd49286a6fd23",
+   "version": "GCF_036323735.1-RS_2024_02"
+  },
+  "ref_report": {
+   "file": "GCF_036323735.1_GRCr8_assembly_report.txt",
+   "name": "NCBI assembly report",
+   "sha256": "20a1ff05e11bb5a1bbe8df674ccad3c2d79de627bd08b529c192bb7c2e6ba48a",
+   "version": "GCF_036323735.1-RS_2024_02"
+  },
+  "swissprot": {
+   "file": "uniprot_sprot.fasta.gz",
+   "name": "UniProtKB/Swiss-Prot",
+   "sha256": "a9c3496aa727e61d25d9e1291c9ba28d2c2ad19c0e26569dc083d53ec4169536",
+   "version": "Swiss-Prot Release 2026_03 of 02-Sep-2026"
+  }
+ },
+ "parameters": {
+  "paralogs": {
+   "evalue": 1e-05,
+   "max_target_seqs": 25,
+   "mode": "blastp, default sensitivity"
+  },
+  "pfam": {
+   "bit_cutoffs": "gathering",
+   "program": "hmmsearch",
+   "reported": "included domains"
+  },
+  "swissprot": {
+   "evalue": 1e-05,
+   "max_target_seqs": 25,
+   "mode": "blastp, default sensitivity"
+  },
+  "threads": 2,
+  "top": 100
+ },
+ "python": "3.13.16",
+ "tools": {
+  "diamond": "2.1.10",
+  "gene-evidence": "0.1.0",
+  "pyhmmer": "0.12.3"
+ }
+}

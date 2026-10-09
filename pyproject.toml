@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gene-evidence"
+version = "0.1.0"
+description = "Auditable evidence for Carbon-A gene predictions that the reference annotation does not have"
+readme = "README.md"
+license = { text = "Apache-2.0" }
+requires-python = ">=3.9"
+dependencies = []
+
+[project.optional-dependencies]
+tools = ["pyhmmer>=0.10"]
+test = ["pytest>=7"]
+
+[project.scripts]
+gene-evidence = "gene_evidence.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

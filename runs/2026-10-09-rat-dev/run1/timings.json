@@ -1,0 +1,16 @@
+{
+ "cpu_count": 2,
+ "note": "a stage missing from stages_seconds was resumed from an existing raw table",
+ "peak_rss_mb_largest_child": 796.5,
+ "peak_rss_mb_self": 480.0,
+ "platform": "Linux-6.6.122+-x86_64-with-glibc2.39",
+ "stages_seconds": {
+  "diamond_paralogs": 28.5,
+  "diamond_swissprot": 92.3,
+  "graph_and_report": 1.7,
+  "hmmsearch_pfam": 211.2,
+  "inputs_and_candidates": 20.8
+ },
+ "threads": 2,
+ "wall_seconds": 363.6
+}
