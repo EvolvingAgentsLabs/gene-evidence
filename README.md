@@ -137,7 +137,7 @@ auditable; it is not a test of ranking quality.
 - Locus context: pseudogene 578 (61 %), nothing 285, protein-coding gene on the other strand or in an
   intron 45, non-coding gene 39. The retrocopy signature fired on 261.
 - Tiers: 1 FOR-strong 223, 2 FOR 75, 3 no evidence 44, 4 AGAINST-weak 0, 5 AGAINST-strong 605.
-- The top 100 are all tier 1, and dominated by repeat-rich families (32 Smok kinase hits, 23 T-cell
+- The top 100 are all tier 1, and dominated by repeat-rich families (32 Smok kinase hits, 24 T-cell
   receptor or immunoglobulin variable segments, 2 retroviral Pol polyproteins including rank 1). That
   is the multi-copy / transposon failure mode documented in [docs/EVIDENCE.md](docs/EVIDENCE.md).
 - `gene-evidence analyze` took 364 s wall on 2 vCPUs (hmmsearch 211 s, DIAMOND 121 s); peak RSS 480 MB

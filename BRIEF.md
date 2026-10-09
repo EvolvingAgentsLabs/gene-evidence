@@ -194,7 +194,7 @@ This is a re-run of the first dev run of 2026-10-08 (kept in git history) with t
 
 **What reading the top 100 showed** [ran: counted from `all_candidates.tsv`]. All of the top 100 are
 tier 1, and they are dominated by repeat-rich families: 32 have a best hit to the Smok kinase family
-(`SMKY_MOUSE`), 23 hit T-cell receptor or immunoglobulin variable segments, and 2, including
+(`SMKY_MOUSE`), 24 hit T-cell receptor or immunoglobulin variable segments, and 2, including
 rank 1, hit retroviral Pol polyproteins. That is the transposon / multi-copy failure mode written into
 `docs/EVIDENCE.md`: domains and homology reward multi-domain repeat-derived ORFs. Per the stopping
 condition, **the tier rule was not changed after seeing this**. It is an input for the next stage's
@@ -209,3 +209,9 @@ Before the repository was made public, two passages above that referred to earli
 were rewritten: the paragraph motivating the evidence order now states the retrocopy expectation on
 its own, and one sentence about that work was removed from *Ranking*. No rule, threshold, criterion or
 result was changed.
+
+## Correction (2026-10-09)
+
+The T-cell receptor / immunoglobulin count in *What reading the top 100 showed* read 23; a recount of
+`swissprot_best` in `runs/2026-10-09-rat-dev/all_candidates.tsv` (ranks 1–100) gives 24: 18 T-cell
+receptor variable and 6 immunoglobulin variable entries. Corrected above; nothing else changed.
