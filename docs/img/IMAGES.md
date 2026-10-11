@@ -8,7 +8,7 @@ To add an image: put the file at the exact path below, then make the edit listed
 
 ---
 
-## 1. `hero.png`
+## 1. `hero.png` — shipped as `docs/img/hero.webp` (2026-10-11)
 
 - **Path:** `docs/img/hero.png`
 - **Size / aspect:** 1600 × 640 px (5:2). Keep it under 400 KB.

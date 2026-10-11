@@ -2,9 +2,7 @@
 
 Auditable evidence for gene predictions that the reference annotation does not have.
 
-<!-- IMAGE PLACEHOLDER: see docs/img/IMAGES.md (hero)
-![A predicted gene locus on a genome track, with evidence cards linked to it by citation lines](docs/img/hero.png)
--->
+![A predicted gene locus on a genome track, with evidence cards linked to it by citation lines](docs/img/hero.webp)
 
 [Carbon-A](https://huggingface.co/buckets/HuggingFaceBio/genbank-annotations) publishes protein-coding
 gene predictions for thousands of GenBank assemblies. Some of the predicted loci are missing from the
