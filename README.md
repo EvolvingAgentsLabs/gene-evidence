@@ -18,6 +18,15 @@ There is no LLM and no learned model in this stage. The rules are fixed and writ
 **Status:** prototype, stage 1. Python, Apache-2.0. Read [Known limitation](#known-limitation) before
 using the tiers to choose what to validate.
 
+**Why it matters.** A predicted gene that the reference lacks is cheap to list and expensive to test: each
+validation experiment costs a wet lab time and money. If every candidate comes with a report in which each
+claim cites the tool output it rests on — tool, version, database hash, parameters, raw values — and two
+runs on the same inputs give the same bytes, a reviewer can check every claim against its source, and
+re-run it, before deciding the experiment is worth paying for, instead of trusting a summary. That is
+what this stage builds. What it does not do is choose the candidates: checked against long-read evidence
+on plant genomes, the tiers ranked supported candidates worse than the predictor's own confidence score
+([Known limitation](#known-limitation)). The report explains a candidate; it does not pick one.
+
 ## What it does
 
 ```mermaid
