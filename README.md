@@ -183,6 +183,21 @@ which candidates to validate first.
   wrong.
 - That "no Swiss-Prot hit" means "novel".
 
+## Part of EvolvingAgentsLabs
+
+gene-evidence is one of three active projects of [EvolvingAgentsLabs](https://evolvingagentslabs.github.io); how they
+connect is drawn on the [website](https://evolvingagentslabs.github.io/#connections). It uses neither of the other
+two yet. Both links below are **next, not built**.
+
+- **[lora-kernel](https://github.com/EvolvingAgentsLabs/lora-kernel)** serves small local models as trained
+  specialists that cite their sources. Planned: a lora-kernel specialist reads `graph.json` and drafts or critiques
+  `report.md`, and `check-report` gates every sentence it writes, exactly as it gates the rule-written report today.
+  The known limitation above still applies: such a report would explain candidates, not rank them.
+- **[agentvcs](https://github.com/EvolvingAgentsLabs/agentvcs)** versions and attributes changes to agent harnesses.
+  Planned: each evidence run is versioned as an agentvcs run, so that a new database release or a changed rule is a
+  patch, and `blame` traces a change in the report to the change that caused it. Today `versions.json` and the
+  `db:*` graph nodes record the same dependencies, without that history.
+
 ## License and data
 
 Apache-2.0 (see [LICENSE](LICENSE)).
