@@ -21,9 +21,7 @@ retrocopy signature before homology and domains**. Either one puts the candidate
 whatever the FOR evidence says. On the rat dev fixture, more than half of the candidates sit on loci
 the reference already calls pseudogenes. See `runs/` for the measured fraction.
 
-<!-- IMAGE PLACEHOLDER: see docs/img/IMAGES.md (rat-locus-context)
 ![Rat development run: the 947 candidates by locus context, coloured by tier; the pseudogene bar is the largest and is entirely tier 5](img/rat-locus-context.png)
--->
 
 ## 1. Locus context (`ctx:*`)
 
