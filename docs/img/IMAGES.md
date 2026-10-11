@@ -47,7 +47,7 @@ To add an image: put the file at the exact path below, then make the edit listed
 
 ---
 
-## 2. `report-example.png`
+## 2. `report-example.png` — shipped (2026-10-11; local GitHub-style render)
 
 - **Path:** `docs/img/report-example.png`
 - **Size / aspect:** 1400 px wide, height as rendered (about 1400 × 1100). Retina capture scaled to
@@ -86,7 +86,7 @@ To add an image: put the file at the exact path below, then make the edit listed
 
 ---
 
-## 3. `rat-locus-context.png`
+## 3. `rat-locus-context.png` — shipped (2026-10-11)
 
 - **Path:** `docs/img/rat-locus-context.png`
 - **Size / aspect:** 1200 × 600 px (2:1), 150 dpi. Keep it under 200 KB.

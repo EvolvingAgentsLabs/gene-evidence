@@ -120,9 +120,7 @@ optionally a transcript GTF.
 | `timings.json` | wall time per stage and peak RAM (kept out of the graph and report so those stay byte-stable) |
 | `raw/` | the tool tables; a stage whose table exists is skipped, so an interrupted run resumes |
 
-<!-- IMAGE PLACEHOLDER: see docs/img/IMAGES.md (report-example)
 ![One candidate section of report.md, with evidence FOR, evidence AGAINST, context and a suggested experiment, each line ending in graph-node citations](docs/img/report-example.png)
--->
 
 ## Development run: rat
 
