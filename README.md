@@ -194,9 +194,10 @@ which candidates to validate first.
 
 ## Part of EvolvingAgentsLabs
 
-gene-evidence is one of three active projects of [EvolvingAgentsLabs](https://evolvingagentslabs.github.io); how they
-connect is drawn on the [website](https://evolvingagentslabs.github.io/#connections). It uses neither of the other
-two yet. Both links below are **next, not built**.
+gene-evidence is one of the projects of [EvolvingAgentsLabs](https://evolvingagentslabs.github.io), whose centre is the
+**[director](https://github.com/EvolvingAgentsLabs/evolving-agents/tree/main/packages/director)** in evolving-agents — the lab's case study for evidence a reviewer can check.
+How they connect is drawn on the [website](https://evolvingagentslabs.github.io/#connections). It uses none of
+the others yet; the links below are **next, not built**.
 
 - **[lora-kernel](https://github.com/EvolvingAgentsLabs/lora-kernel)** serves small local models as trained
   specialists that cite their sources. Planned: a lora-kernel specialist reads `graph.json` and drafts or critiques
